@@ -6,6 +6,10 @@ let fs = require('fs');
 // e separa as linhas em um array usando split('\n')
 let data = fs.readFileSync(0, 'utf8').trim().split('\n');
 
+// Pega a primeira linha da entrada (data[0]).
+// Essa linha contém os três números separados por espaço, por exemplo: "7 14 106".
+// O método split(' ') divide a string em partes usando o espaço como separador.
+// Assim, o resultado é um array com cada valor separado: ["7", "14", "106"].
 let valores = data[0].split(' ');
 
 // recebe o valor de A
